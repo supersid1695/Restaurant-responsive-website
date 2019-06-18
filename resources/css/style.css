@@ -95,7 +95,7 @@ a:visited {
     text-decoration: none;
     border-bottom: 1px solid #e67e22;
     padding-bottom: 1px;
-    transition: border-bottom 0.5s,color 0.5s;
+    transition: border-bottom 0.5s, color 0.5s;
 }
 
 a:hover,
@@ -269,7 +269,7 @@ section {
 
 /* -----app section----- */
 
-.section-steps{
+.section-steps {
     background-color: rgb(243, 242, 242);
 }
 
@@ -351,7 +351,7 @@ section {
 /* customer testimonials */
 
 .section-testimonials {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./img/back-customers.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/back-customers.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -384,6 +384,59 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* plan section */
+
+.section-plans {
+    background-color: rgb(243, 242, 242);
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 10%;
+    box-shadow: 0 2px 2px rgb(211, 209, 209);
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+.plan-box ul li{
+    /* text-decoration: none; */
+    padding: 5px 0;
+}
+
+.plan-box div:first-child {
+    background-color: #fbfafa;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
 }
 /* :root {
     --primarycolor: #000;

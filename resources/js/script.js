@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    // $('h1').click(function () {
-    //     $(this).css('background-color', '#ff0000');
-    // })
-
     // stickky nav bar
     $('.jq-section-features').waypoint(function (direction) {
         if (direction == "down") {
@@ -64,4 +60,52 @@ $(document).ready(function () {
             }
         });
 
+
+    // Animation
+    //animation for features
+    $('.jq-wp-1').waypoint(function (direction) {
+        $('.jq-wp-1').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    //animation for phone image
+    $('.jq-wp-2').waypoint(function (direction) {
+        $('.jq-wp-2').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
+
+    //animation for cities
+    $('.jq-wp-3').waypoint(function (direction) {
+        $('.jq-wp-3').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    //animation for plan
+    $('.jq-wp-4').waypoint(function (direction) {
+        $('.jq-wp-4').addClass('animated pulse');
+    }, {
+        offset: '50%'
+    });
+
+
+    // Nav mobile icon
+    $('.jq-nav-icon').click(function (direction) {
+        var nav = $('.jq-main-nav');
+        var icon = $('.jq-nav-icon i');
+        nav.slideToggle(200);
+
+        if(icon.hasClass('ion-navicon-round')){
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        }else {
+            icon.removeClass('ion-close-round');
+            icon.addClass('ion-navicon-round');
+        }
+
+    });
+
+    // Mobile navigation
 });
